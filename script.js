@@ -58,11 +58,16 @@ window.onclick = function (event) {
 function select() {
   document.getElementById("select").style.display = "block";
 }
+function select1() {
+  var k = document.getElementById("Search").value;
+  document.getElementById(k).focus();
+}
 
 document.getElementById("add").addEventListener("click", select);
 document.getElementById("edit").addEventListener("click", edit);
 document.getElementById("del").addEventListener("click", del);
 document.getElementById("color").addEventListener("click", color);
+document.getElementById("Search").addEventListener("click", select1);
 
 function edit() {
   var k = document.getElementById("which").value;
